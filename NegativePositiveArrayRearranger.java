@@ -1,3 +1,9 @@
+# RearrangeArray
+/* This Java program rearranges an array such that all negative numbers appear before positive numbers. 
+It uses the two-pointer approach to achieve this rearrangement in linear time complexity without using extra space. */
+
+
+
 import java.util.*;
 public class RearrangeArray {
     public static void rearrangeArray(int[] arr)
