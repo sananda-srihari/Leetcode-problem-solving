@@ -1,0 +1,24 @@
+class HelloWorld {
+    public static void main(String[] args) {
+        int[] arr = {5, 5,5,6,4, 2, 3, 4, 4};
+        Arrays.sort(arr);
+        
+        int largest = arr[arr.length - 1];
+        int secondLargest = Integer.MIN_VALUE;
+        for (int i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] < largest) {
+                secondLargest = arr[i];
+                break;
+            }
+        }
+        
+        int count = 0;
+        for (int num : arr) {
+            if (num == secondLargest) {
+                count++;
+            }
+        }
+        
+        System.out.print(count);
+    }
+}
